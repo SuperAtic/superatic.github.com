@@ -67,7 +67,7 @@
         repos = repos || [];
         page = page || 1;
 
-        var uri = "https://api.github.com/orgs/super-atic/repos?callback=?"
+        var uri = "https://api.github.com/superatic/repos?callback=?"
                 + "&per_page=100"
                 + "&page="+page;
 
@@ -123,7 +123,7 @@
       }
       addRepos();
 
-      $.getJSON("https://api.github.com/orgs/super-atic/members?callback=?", function (result) {
+      $.getJSON("https://api.github.com/superatic/members?callback=?", function (result) {
         var members = result.data;
 
         $(function () {
